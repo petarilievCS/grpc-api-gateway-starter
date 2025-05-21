@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package order;
+option go_package = "github.com/petarilievCS/grpc-api-gateway/gen/order;orderpb";
+
+// Service definition
+service OrderService {
+  rpc GetOrder(GetOrderRequest) returns (Order);
+}
+
+// Request message
+message GetOrderRequest {
+  string order_id = 1;
+}
+
+// Response message
+message Order {
+    string order_id = 1;
+    string user_id = 2;
+    string name = 3;       // Name of the item being ordered
+    int32 quantity = 4;
+  }

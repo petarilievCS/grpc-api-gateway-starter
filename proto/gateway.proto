@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package gateway;
+option go_package = "github.com/your-username/grpc-api-gateway/gen/gateway;gatewaypb";
+
+import "user.proto";
+import "order.proto";
+
+service APIGatewayService {
+    rpc GetOrder(order.GetOrderRequest) returns (order.Order); 
+    rpc GetUser(user.GetUserRequest) returns (user.User);
+}
