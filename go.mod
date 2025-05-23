@@ -1,4 +1,4 @@
-module github.com/petarilievCS/grpc-api-gateway
+module grpc-api-gateway
 
 go 1.24.2
 

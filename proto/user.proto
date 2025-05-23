@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package user;
-option go_package = "github.com/petarilievCS/grpc-api-gateway/gen/user;userpb";
+option go_package = "gen/user;userpb";
 
 // Service definition
 service UserService {
