@@ -4,9 +4,9 @@ package gateway;
 option go_package = "gen/gateway;gatewaypb";
 
 import "user.proto";
-import "order.proto";
+// import "order.proto";
 
 service APIGatewayService {
-    rpc GetOrder(order.GetOrderRequest) returns (order.Order); 
+    // rpc GetOrder(order.GetOrderRequest) returns (order.Order); 
     rpc GetUser(user.GetUserRequest) returns (user.User);
 }
