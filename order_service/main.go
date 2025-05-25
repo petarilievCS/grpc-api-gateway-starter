@@ -14,7 +14,7 @@ type orderServer struct {
 	orderpb.UnimplementedOrderServiceServer
 }
 
-func (s *orderServer) GetUser(ctx context.Context, req *orderpb.GetOrderRequest) (*orderpb.Order, error) {
+func (s *orderServer) GetOrder(ctx context.Context, req *orderpb.GetOrderRequest) (*orderpb.Order, error) {
 	log.Printf("Fetching order with ID: %s", req.OrderId)
 
 	// Generate mock user
