@@ -5,9 +5,9 @@ import (
 	"log"
 	"net"
 
-	"google.golang.org/grpc"
-
 	userpb "grpc-api-gateway/gen/user"
+
+	"google.golang.org/grpc"
 )
 
 type userServer struct {
